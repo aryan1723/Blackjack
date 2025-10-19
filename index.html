@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="outer-box">
+        <div id="inner-box">
+            <h1>Blackjack</h1>
+            <h3 id="mes-el">Want to play a round?</h3>
+            <h5 id="card-el">Cards: </h5>
+            <h5 id="sum-el">Sum: </h5>
+            <button id="strt" onclick="startgame()">START GAME</button>
+            <button id="drw" onclick="drawcard()" style="display: none;">DRAW CARD</button>
+            <button id="retry" onclick="retry()" style="display: none;"">TRY AGAIN</button>
+            <div id="disp">
+                <p id="mon">Per: ₹20</p>
+                <p style="margin-top: 20px; 
+                          color: rgb(194, 194, 194);
+                          ">Get 21 as sum to win, above 21 will be considered as loss
+                    till some is less than 21 you can draw cards.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
